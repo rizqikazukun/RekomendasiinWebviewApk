@@ -1,5 +1,6 @@
 package com.rekomendasiin.webapp;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings;
 
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
