@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <WebView
+            android:id="@+id/webview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hm"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:backgroundTintMode="add"
+                android:drawableBottom="@drawable/ic_baseline_home_24"
+                android:gravity="center|center_horizontal"
+                android:onClick="HOME"
+                android:text="@string/home"
+                android:textColor="#C30000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/fd"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:backgroundTintMode="add"
+                android:drawableBottom="@drawable/ic_baseline_shopping_cart_24"
+                android:gravity="center"
+                android:onClick="MYCART"
+                android:text="@string/feed"
+                android:textColor="#FFC30000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/ord"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:backgroundTintMode="add"
+                android:drawableBottom="@drawable/ic_baseline_payment_24"
+                android:onClick="MYORDER"
+                android:text="@string/my_order"
+                android:textColor="#FFC30000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
